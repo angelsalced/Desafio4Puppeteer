@@ -5,7 +5,7 @@
   "scripts": {
     "test-snapshots": "jest --config=jest.config.js --detectOpenHandles --forceExit",
     "test-snapshot-update": "jest --config=jest.config.js --updateSnapshot --detectOpenHandles --forceExit",
-    "test:percy": "npx percy exec -- jest -i './Puppeteer4/tests-snapshots/__tests__/percy.test.js'"
+    "test:percy": "set PERCY_TOKEN=web_9ad25a2a21be65c8b3c4aca61564c627d568c0599f683a3cc79778115d32bd47 && npx percy exec -- jest --testPathPattern=tests-snapshots/__tests__/percy.test.js"
   },
   "keywords": [],
   "author": "",

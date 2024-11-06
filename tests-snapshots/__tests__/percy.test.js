@@ -14,9 +14,9 @@ describe("Percy test", () => {
       await browser.close();
     });
 
-    it("Captura de pantalla completa Angel Salcedo", async () => {
-        await page.goto('https://www.example.com');
-        await page.waitForSelector('h1');
+    it("Captura de Elemento Angel Salcedo", async () => {
+        await page.goto('https://www.wikipedia.org/');
+        await page.waitForSelector('head');
         await percySnapshot(page, "Ejercicio Percy");
 
     });
